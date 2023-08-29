@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #333333;
+    position: relative;
+}
+.topnav #myLinks{
+    display: none;
+    
+} 
+.topnav a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-style: 17px;
+    display: block;
+}
+/* styling the harmburger menu */
+.topnav a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* add gray background hover effect */
+.topnav a:hover{
+    background-color: #dddddd;
+    color: black;
+}
+/* hide topnav */
+.topnav{
+    display: none;
+}
+.Active{
+    background: #04aa6d;
+    color: white;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 14px 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:goldenrod;
+    font-size: 18px;
+}
+nav{
+    background: #333333;
+}
+nav ul li:hover{
+    background:white;
+}
+nav ul li a:hover{
+    color: sienna;
+    border-bottom:  2px solid black;
+    
+}
+header{
+    height: 450px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("./hotel\ photo\ best\ one.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#news{
+    height: 400px;
+    background: lightgray;
+    padding: 50px;
+
+}
+#news h1{
+    margin: 15px 0;
+}
+#news p{
+    margin-bottom: 15px;
+    color: #808080;
+}
+#news p span{
+    font-size: 4 0px;
+    color:burlywood;
+}
+
+#contact{
+    height: 350px;
+    background: white;
+    padding: 60px;
+}
+#contact h1{
+    color: #808080;
+}
+#contact p{
+    margin-bottom: 10px;
+    color:grey;
+    line-height: 1.4;
+}
+#contact h3 h2{
+    color:wheat;
+    margin: 10px 0;
+}
+#services{
+    height: 900px;
+    padding: 60px;
+    background:grey;
+}
+#services h1{
+    margin: 40px;
+    color:white;
+}
+#services p{
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    
+}
+#services h3{
+    color: #606060;
+}
+.social a{
+    text-decoration: none;
+}
+.social .fa-whatsapp{
+    margin-right: 20px;
+    color: #25d366;
+    font-size: 20px;
+    
+}
+.social .fa-facebook{
+    margin-right: 20px;
+    color: #4267b2;
+    font-size: 20px;
+    
+
+}
+.social .fa-instagram{
+margin-right: 20px;
+color: #e1306c;
+font-size: 20px;
+}
+.social .fa-youtube{
+    margin-right: 20px;
+    color: #ff0000;
+    font-size: 20px;
+
+}
+.about p{
+    
+}
+#bookings h1{
+    color: black;
+
+}
+#bookings p{
+    color: #606060;
+}
+.about .col{
+    height: 350px;
+    width: 50%;
+    color: #e1306c;
+}
+.col .col1 p{
+    color: #333333;
+}
+.col1{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.col1 p{
+    margin-top: 50px;
+    color: black;
+}
+.col col2{
+    margin-top: 780px;
+}
+.col2{
+    background: url("./check\ in\ with\ us.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    margin-bottom:50px;
+    width: 100%;
+}
+.column{
+    height: 700px;
+    display: flex;
+    
+}
+.col3{
+    width: 33.3%;
+    background: url("./swimming\ pool\ hotel.jpg");
+    padding: 10px;
+    height: 650px;
+}
+.col4{
+    width: 33.3%;
+    background: url("./hotel\ photo\ of\ woman\ in\ lobby.jpg");
+    padding: 10px;
+    height: 650px;
+}
+.col5{
+    width: 33.3%;
+    background: url("./Burj\ Al\ Arab.jpg");
+    padding: 10px;
+    height: 650px;
+}
+.col3:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.col4:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.col5:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+/* Media screen size */
+@media screen and (max-width:600px){
+.topnav{
+    display: block;
+}
+nav{
+    display: none;
+}
+header p{
+    text-align: center;
+    margin-top: 10px;
+}
+#about{
+    padding: 20px;
+    height: 450px;
+}
+#contact{
+padding: 20px;
+height: 700px;
+}
+.column{
+    height: 900px;
+    flex-direction: column;
+}
+.col3{
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+.col4{
+    width: 100%;
+    margin-bottom: 0px; 
+    padding: 20px;
+}
+.col5{
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+.col .col1{
+    margin-top: 20px;
+}
+.col2{
+    padding: 150px auto;
+    margin-top: 140px;
+    width: 100%;
+    
+}
+}
